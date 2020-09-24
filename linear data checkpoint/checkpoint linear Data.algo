@@ -1,0 +1,44 @@
+ALGORITHM algorithm_name
+VAR
+    array_ageBoys : ARRAY_OF INTEGER[];
+    array_ageGirls: ARRAY_OF INTEGER[];
+    sum:INTEGER:=0;
+    n:INTEGER;
+    n1:INTEGER;
+BEGIN
+    REPEAT
+        write ('n');
+    read (n);
+    UNTIL (n=isDigit())
+    
+
+FOR i FROM 0 TO n STEP 1  DO
+    write ('entrer age ');
+    read(array_ageBoys[i])
+
+END_FOR
+    REPEAT
+    write('n1');
+    read (n1);
+    UNTIL (n1=isDigit())
+    
+    FOR i FROM 0 TO n STEP 1  DO
+    write ('entrer age ');
+    read(array_ageGirls[i])
+
+END_FOR
+FOR i FROM 0 TO n STEP 1  DO
+    
+    FOR j FROM 0 TO n1 STEP 2  DO
+        IF (array_ageBoys[i]=array_ageGirls[j]) THEN
+            sum+=array_ageBoys[i];
+        END_IF
+    END_FOR
+END_FOR
+    write sum;
+
+    
+END
+
+
+//count i 
